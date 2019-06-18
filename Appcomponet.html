@@ -1,0 +1,29 @@
+﻿<button class="btn-danger" (click)="GetFullName()">Click Me</button>
+<input [value]="name"  (input)="name=$event.target.value"/>
+<!--<input [(ngmodel)]="name" />-->
+
+<div>
+    
+    <ul>
+        <li routerLinkActive="active">
+            <a routerLink="Home">Home</a>
+
+        </li>
+    </ul>
+    <router-outlet></router-outlet>
+
+</div>
+
+<div >
+    {{name}}
+    <br />
+    <br />
+    
+    <My-Employe></My-Employe> 
+    <lst-Employee></lst-Employee>
+</div>
+<table>
+    <tr *ngIf="show">
+        <td>aa</td>
+    </tr>
+</table>
